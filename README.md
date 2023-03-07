@@ -33,6 +33,9 @@ $ python3 main.py
 10. SHIB
 11. TRX
 12. XMR
+13. USDT (Price in BTC)
+14. BUSD (Price in BTC)
+15. USDC (Price in BTC)
 
 ![1](https://user-images.githubusercontent.com/77790856/223200503-adb8ca3b-fe61-4fbe-8659-2fab21030786.png)
 ![1027](https://user-images.githubusercontent.com/77790856/223200836-aeaa42b9-52b3-4226-a9d6-f6e7eb9e5920.png)
@@ -46,6 +49,10 @@ $ python3 main.py
 ![5994](https://user-images.githubusercontent.com/77790856/223201593-61401613-f117-41dd-930a-054a85cf634f.png)
 ![1958](https://user-images.githubusercontent.com/77790856/223201702-f953b173-6d8c-411f-a42c-87f82520f229.png)
 ![328](https://user-images.githubusercontent.com/77790856/223201782-167f59fe-6d80-496e-953d-1fa9ab44d4f9.png)
+![825](https://user-images.githubusercontent.com/77790856/223516932-ea69b67b-3131-4baf-aff8-39f10e78926b.png)
+![3408](https://user-images.githubusercontent.com/77790856/223517185-747086ff-af36-4216-b8a2-077616be184b.png)
+![4687](https://user-images.githubusercontent.com/77790856/223517231-3eab3734-5c05-4a84-a332-5dae4392cc3e.png)
+
 
 # Commands:
 ```
