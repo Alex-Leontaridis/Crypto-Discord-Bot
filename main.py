@@ -157,6 +157,40 @@ async def xmr(ctx):
         await ctx.send(embed=embedVar)
 
 @client.command()
+async def usdt(ctx):
+        key = "https://api.binance.com/api/v3/ticker/price?symbol=USDTBTC"
+        data = requests.get(key)  
+        data = data.json()
+        embedVar = discord.Embed(title="USDT Price", description="Live Tracking of USDT Price, powered by Binance API.", color=0x009393)
+        embedVar.set_thumbnail(url="https://s2.coinmarketcap.com/static/img/coins/64x64/825.png")
+        embedVar.add_field(name="Price:", value=f"{data['price']}", inline=False)
+        embedVar.set_footer(text="Crypto Discord Bot, made by Alexander Leontaridis.")
+        await ctx.send(embed=embedVar)
+
+@client.command()
+async def usdc(ctx):
+        key = "https://api.binance.com/api/v3/ticker/price?symbol=BUSDBTC"
+        data = requests.get(key)  
+        data = data.json()
+        embedVar = discord.Embed(title="BUSD Price", description="Live Tracking of BUSD Price, powered by Binance API.", color=0xf0b90b)
+        embedVar.set_thumbnail(url="https://s2.coinmarketcap.com/static/img/coins/64x64/4687.png")
+        embedVar.add_field(name="Price:", value=f"{data['price']}", inline=False)
+        embedVar.set_footer(text="Crypto Discord Bot, made by Alexander Leontaridis.")
+        await ctx.send(embed=embedVar)
+
+@client.command()
+async def usdc(ctx):
+        key = "https://api.binance.com/api/v3/ticker/price?symbol=USDCBTC"
+        data = requests.get(key)  
+        data = data.json()
+        embedVar = discord.Embed(title="USDC Price", description="Live Tracking of USDC Price, powered by Binance API.", color=0x2775ca)
+        embedVar.set_thumbnail(url="https://s2.coinmarketcap.com/static/img/coins/64x64/3408.png")
+        embedVar.add_field(name="Price:", value=f"{data['price']}", inline=False)
+        embedVar.set_footer(text="Crypto Discord Bot, made by Alexander Leontaridis.")
+        await ctx.send(embed=embedVar)
+
+
+@client.command()
 async def command_list(ctx):
         embed=discord.Embed(title="Crypto Bot Help.", description="List of all Crypto Bot Commands:", color=0x3478fe)
         embed.add_field(name="BTC Price:", value="!btc", inline=False)
@@ -172,6 +206,9 @@ async def command_list(ctx):
         embed.add_field(name="SHIB Price:", value="!shib", inline=False)
         embed.add_field(name="TRX Price:", value="!trx", inline=False)
         embed.add_field(name="XMR Price:", value="!xmr", inline=False)
+        embed.add_field(name="USDT Price:", value="!usdt", inline=False)
+        embed.add_field(name="BUSD Price:", value="!busd", inline=False)
+        embed.add_field(name="USDC Price:", value="!usdc", inline=False)
         await ctx.send(embed=embed)
 
 client.run("[Enter Token]")
@@ -179,3 +216,4 @@ client.run("[Enter Token]")
 
 
   
+
