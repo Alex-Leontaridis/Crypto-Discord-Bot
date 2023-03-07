@@ -52,7 +52,7 @@ $ python3 main.py
 !command_list #Show all available commands.
 ![crypto] #Show real-time price of selected crypto ex. !BTC // !ETH 
 ``` 
-# Upcoming futures:
+# Demo:
 >Schreenshots:
 
 ![image](https://user-images.githubusercontent.com/77790856/223203309-c6f9dfe5-addb-4549-8a86-f20743462250.png)\
